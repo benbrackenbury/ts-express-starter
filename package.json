@@ -1,0 +1,25 @@
+{
+  "name": "ts-express-starter",
+  "version": "1.0.0",
+  "description": "Typescript Express Starter",
+  "main": "dis/app.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "dev": "concurrently \"tsc --watch\" \"node --env-file=.env dist/app.js --watch\"",
+    "lint": "eslint . --ext .ts"
+  },
+  "author": "Ben Brackenbury",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.55.0",
+    "typescript": "^5.3.3"
+  }
+}
